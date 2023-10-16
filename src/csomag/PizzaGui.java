@@ -4,6 +4,8 @@
  */
 package csomag;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author gergo
@@ -26,57 +28,66 @@ public class PizzaGui extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        szoszokBTNG = new javax.swing.ButtonGroup();
+        meretBTNG = new javax.swing.ButtonGroup();
+        szoszokPNL = new javax.swing.JPanel();
         paradicsomRBTTN = new javax.swing.JRadioButton();
         bbqRBTTN = new javax.swing.JRadioButton();
         tejfolRBTTN = new javax.swing.JRadioButton();
-        jPanel2 = new javax.swing.JPanel();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jPanel4 = new javax.swing.JPanel();
-        jCheckBox2 = new javax.swing.JCheckBox();
-        jCheckBox3 = new javax.swing.JCheckBox();
-        jCheckBox4 = new javax.swing.JCheckBox();
-        jCheckBox1 = new javax.swing.JCheckBox();
-        jPanel3 = new javax.swing.JPanel();
-        jCheckBox6 = new javax.swing.JCheckBox();
-        jCheckBox7 = new javax.swing.JCheckBox();
-        jCheckBox5 = new javax.swing.JCheckBox();
-        jPanel5 = new javax.swing.JPanel();
-        jCheckBox10 = new javax.swing.JCheckBox();
-        jCheckBox11 = new javax.swing.JCheckBox();
-        jCheckBox8 = new javax.swing.JCheckBox();
-        jCheckBox9 = new javax.swing.JCheckBox();
-        jCheckBox13 = new javax.swing.JCheckBox();
-        jCheckBox12 = new javax.swing.JCheckBox();
-        jSpinner1 = new javax.swing.JSpinner();
-        jLabel1 = new javax.swing.JLabel();
+        meretPNL = new javax.swing.JPanel();
+        nagyRBTTN = new javax.swing.JRadioButton();
+        kicsiRBTTN = new javax.swing.JRadioButton();
+        sajtokPNL = new javax.swing.JPanel();
+        cheddarCMB = new javax.swing.JCheckBox();
+        mozzarellaCMB = new javax.swing.JCheckBox();
+        parmesanCMB = new javax.swing.JCheckBox();
+        marvanyCMB = new javax.swing.JCheckBox();
+        husokPNL = new javax.swing.JPanel();
+        szalamiCMB = new javax.swing.JCheckBox();
+        baconCMB = new javax.swing.JCheckBox();
+        sonkaCMB = new javax.swing.JCheckBox();
+        zoldsegekPNL = new javax.swing.JPanel();
+        hagymaCMB = new javax.swing.JCheckBox();
+        pariCMB = new javax.swing.JCheckBox();
+        gombaCMB = new javax.swing.JCheckBox();
+        kukoricaCMB = new javax.swing.JCheckBox();
+        bogyoCMB = new javax.swing.JCheckBox();
+        paprikaCMB = new javax.swing.JCheckBox();
+        osszegPNL = new javax.swing.JPanel();
+        osszegLBL = new javax.swing.JLabel();
+        osszegTXT = new javax.swing.JTextField();
+        jPanel1 = new javax.swing.JPanel();
+        darabSPR = new javax.swing.JSpinner();
+        jToggleButton1 = new javax.swing.JToggleButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Alapszósz"));
+        szoszokPNL.setBorder(javax.swing.BorderFactory.createTitledBorder("Alapszósz"));
 
+        szoszokBTNG.add(paradicsomRBTTN);
         paradicsomRBTTN.setText("Paradicsomos");
 
+        szoszokBTNG.add(bbqRBTTN);
         bbqRBTTN.setText("BBQ");
 
+        szoszokBTNG.add(tejfolRBTTN);
         tejfolRBTTN.setText("Tejfölös");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout szoszokPNLLayout = new javax.swing.GroupLayout(szoszokPNL);
+        szoszokPNL.setLayout(szoszokPNLLayout);
+        szoszokPNLLayout.setHorizontalGroup(
+            szoszokPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(szoszokPNLLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(szoszokPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(bbqRBTTN, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(tejfolRBTTN, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(paradicsomRBTTN, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
+                .addContainerGap(51, Short.MAX_VALUE))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        szoszokPNLLayout.setVerticalGroup(
+            szoszokPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(szoszokPNLLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(paradicsomRBTTN)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -86,159 +97,285 @@ public class PizzaGui extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Méret"));
+        meretPNL.setBorder(javax.swing.BorderFactory.createTitledBorder("Méret"));
 
-        jRadioButton2.setText("45 cm");
-
-        jRadioButton1.setText("32 cm");
-        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton1ActionPerformed(evt);
+        meretBTNG.add(nagyRBTTN);
+        nagyRBTTN.setText("45 cm (3000ft)");
+        nagyRBTTN.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                nagyRBTTNItemStateChanged(evt);
             }
         });
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        meretBTNG.add(kicsiRBTTN);
+        kicsiRBTTN.setText("32 cm (2000ft)");
+        kicsiRBTTN.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                kicsiRBTTNItemStateChanged(evt);
+            }
+        });
+        kicsiRBTTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kicsiRBTTNActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout meretPNLLayout = new javax.swing.GroupLayout(meretPNL);
+        meretPNL.setLayout(meretPNLLayout);
+        meretPNLLayout.setHorizontalGroup(
+            meretPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(meretPNLLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jRadioButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jRadioButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
+                .addGroup(meretPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(kicsiRBTTN, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(nagyRBTTN, javax.swing.GroupLayout.DEFAULT_SIZE, 113, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        meretPNLLayout.setVerticalGroup(
+            meretPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(meretPNLLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jRadioButton1)
+                .addComponent(kicsiRBTTN)
                 .addGap(18, 18, 18)
-                .addComponent(jRadioButton2)
+                .addComponent(nagyRBTTN)
                 .addContainerGap(13, Short.MAX_VALUE))
         );
 
-        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder("Sajtok"));
+        sajtokPNL.setBorder(javax.swing.BorderFactory.createTitledBorder("Sajtok (400ft/ feltét)"));
 
-        jCheckBox2.setText("Cheddar");
+        cheddarCMB.setText("Cheddar");
+        cheddarCMB.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                cheddarCMBItemStateChanged(evt);
+            }
+        });
 
-        jCheckBox3.setText("Mozzarella");
+        mozzarellaCMB.setText("Mozzarella");
+        mozzarellaCMB.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                mozzarellaCMBItemStateChanged(evt);
+            }
+        });
 
-        jCheckBox4.setText("Parmesan");
+        parmesanCMB.setText("Parmesan");
+        parmesanCMB.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                parmesanCMBItemStateChanged(evt);
+            }
+        });
 
-        jCheckBox1.setText("Márványsajt");
+        marvanyCMB.setText("Márványsajt ");
+        marvanyCMB.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                marvanyCMBItemStateChanged(evt);
+            }
+        });
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
+        javax.swing.GroupLayout sajtokPNLLayout = new javax.swing.GroupLayout(sajtokPNL);
+        sajtokPNL.setLayout(sajtokPNLLayout);
+        sajtokPNLLayout.setHorizontalGroup(
+            sajtokPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(sajtokPNLLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jCheckBox1)
-                    .addComponent(jCheckBox2)
-                    .addComponent(jCheckBox3)
-                    .addComponent(jCheckBox4))
-                .addContainerGap())
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jCheckBox1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jCheckBox2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jCheckBox3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jCheckBox4)
-                .addContainerGap())
-        );
-
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder("Húsok"));
-
-        jCheckBox6.setText("Szalámi");
-
-        jCheckBox7.setText("Bacon");
-
-        jCheckBox5.setText("Sonka");
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jCheckBox5)
-                    .addComponent(jCheckBox6)
-                    .addComponent(jCheckBox7))
+                .addGroup(sajtokPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(marvanyCMB)
+                    .addComponent(cheddarCMB)
+                    .addComponent(mozzarellaCMB)
+                    .addComponent(parmesanCMB))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        sajtokPNLLayout.setVerticalGroup(
+            sajtokPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(sajtokPNLLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jCheckBox5)
+                .addComponent(marvanyCMB)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(cheddarCMB)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(mozzarellaCMB)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(parmesanCMB)
+                .addContainerGap())
+        );
+
+        husokPNL.setBorder(javax.swing.BorderFactory.createTitledBorder("Húsok (300ft/feltét)"));
+
+        szalamiCMB.setText("Szalámi");
+        szalamiCMB.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                szalamiCMBItemStateChanged(evt);
+            }
+        });
+
+        baconCMB.setText("Bacon");
+        baconCMB.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                baconCMBItemStateChanged(evt);
+            }
+        });
+
+        sonkaCMB.setText("Sonka ");
+        sonkaCMB.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                sonkaCMBItemStateChanged(evt);
+            }
+        });
+
+        javax.swing.GroupLayout husokPNLLayout = new javax.swing.GroupLayout(husokPNL);
+        husokPNL.setLayout(husokPNLLayout);
+        husokPNLLayout.setHorizontalGroup(
+            husokPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(husokPNLLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(husokPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(szalamiCMB, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(sonkaCMB, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(baconCMB, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        husokPNLLayout.setVerticalGroup(
+            husokPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(husokPNLLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(sonkaCMB)
                 .addGap(18, 18, 18)
-                .addComponent(jCheckBox6)
+                .addComponent(szalamiCMB)
                 .addGap(18, 18, 18)
-                .addComponent(jCheckBox7)
+                .addComponent(baconCMB)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder("Zöldségek"));
+        zoldsegekPNL.setBorder(javax.swing.BorderFactory.createTitledBorder("Zöldségek (200ft/feltét)"));
 
-        jCheckBox10.setText("Hagyma");
+        hagymaCMB.setText("Hagyma");
+        hagymaCMB.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                hagymaCMBItemStateChanged(evt);
+            }
+        });
 
-        jCheckBox11.setText("Paradicsom");
+        pariCMB.setText("Paradicsom");
+        pariCMB.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                pariCMBItemStateChanged(evt);
+            }
+        });
 
-        jCheckBox8.setText("Gomba");
+        gombaCMB.setText("Gomba");
+        gombaCMB.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                gombaCMBItemStateChanged(evt);
+            }
+        });
 
-        jCheckBox9.setText("Kukorica");
+        kukoricaCMB.setText("Kukorica");
+        kukoricaCMB.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                kukoricaCMBItemStateChanged(evt);
+            }
+        });
 
-        jCheckBox13.setText("Olivabogyó");
+        bogyoCMB.setText("Olivabogyó");
 
-        jCheckBox12.setText("Paprika");
+        paprikaCMB.setText("Paprika");
+        paprikaCMB.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                paprikaCMBItemStateChanged(evt);
+            }
+        });
 
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
+        javax.swing.GroupLayout zoldsegekPNLLayout = new javax.swing.GroupLayout(zoldsegekPNL);
+        zoldsegekPNL.setLayout(zoldsegekPNLLayout);
+        zoldsegekPNLLayout.setHorizontalGroup(
+            zoldsegekPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(zoldsegekPNLLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jCheckBox9)
-                    .addComponent(jCheckBox8))
+                .addGroup(zoldsegekPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(kukoricaCMB)
+                    .addComponent(gombaCMB))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jCheckBox10)
-                    .addComponent(jCheckBox11))
+                .addGroup(zoldsegekPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(hagymaCMB)
+                    .addComponent(pariCMB))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jCheckBox12)
-                    .addComponent(jCheckBox13))
+                .addGroup(zoldsegekPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(paprikaCMB)
+                    .addComponent(bogyoCMB))
                 .addContainerGap())
         );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
+        zoldsegekPNLLayout.setVerticalGroup(
+            zoldsegekPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(zoldsegekPNLLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jCheckBox8)
-                    .addComponent(jCheckBox12)
-                    .addComponent(jCheckBox10))
+                .addGroup(zoldsegekPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(paprikaCMB, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(zoldsegekPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(gombaCMB)
+                        .addComponent(hagymaCMB)))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jCheckBox9)
-                    .addComponent(jCheckBox11)
-                    .addComponent(jCheckBox13))
+                .addGroup(zoldsegekPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(kukoricaCMB)
+                    .addComponent(pariCMB)
+                    .addComponent(bogyoCMB))
                 .addContainerGap())
         );
 
-        jSpinner1.setModel(new javax.swing.SpinnerNumberModel(1, 1, 3, 1));
+        osszegPNL.setBackground(new java.awt.Color(255, 255, 255));
+        osszegPNL.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 1, true));
+        osszegPNL.setForeground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setText("Darabszám:");
+        osszegLBL.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        osszegLBL.setText("ÖSSZEG:");
+
+        javax.swing.GroupLayout osszegPNLLayout = new javax.swing.GroupLayout(osszegPNL);
+        osszegPNL.setLayout(osszegPNLLayout);
+        osszegPNLLayout.setHorizontalGroup(
+            osszegPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(osszegPNLLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(osszegLBL)
+                .addContainerGap(33, Short.MAX_VALUE))
+        );
+        osszegPNLLayout.setVerticalGroup(
+            osszegPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(osszegPNLLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(osszegLBL, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        osszegTXT.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        osszegTXT.setText("*összeg*");
+        osszegTXT.setEnabled(false);
+
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Darabszám:"));
+
+        darabSPR.setModel(new javax.swing.SpinnerNumberModel(1, 1, 3, 1));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(darabSPR)
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(darabSPR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        jToggleButton1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jToggleButton1.setText("Rendel");
+        jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -248,53 +385,142 @@ public class PizzaGui extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(szoszokPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(sajtokPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jSpinner1)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(51, Short.MAX_VALUE))
+                            .addComponent(meretPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(husokPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(zoldsegekPNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jToggleButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(osszegPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(osszegTXT)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(meretPNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(16, 16, 16)
-                                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(szoszokPNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(sajtokPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(husokPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(17, 17, 17)
+                        .addComponent(osszegPNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(osszegTXT, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(zoldsegekPNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jToggleButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(13, 13, 13)))
                 .addGap(18, 18, 18))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+    private void kicsiRBTTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kicsiRBTTNActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton1ActionPerformed
+    }//GEN-LAST:event_kicsiRBTTNActionPerformed
+
+    private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
+        
+        if (paradicsomRBTTN.isSelected() == false && tejfolRBTTN.isSelected() == false && bbqRBTTN.isSelected() == false) {
+            JOptionPane.showMessageDialog(rootPane, "Nincs alapszósz választva", "Hiba! Alapszósz", 0);
+        
+        
+   
+        }
+        else
+        {
+                
+        
+                
+        }
+        
+        
+        if (kicsiRBTTN.isSelected() == false && nagyRBTTN.isSelected() == false) {
+            JOptionPane.showMessageDialog(rootPane, "Nincs méret választva", "Hiba! méret", 2);
+        
+        
+   
+        }
+        else
+        {
+                
+        
+                
+        }
+    }//GEN-LAST:event_jToggleButton1ActionPerformed
+
+    private void marvanyCMBItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_marvanyCMBItemStateChanged
+        fizetendo();
+    }//GEN-LAST:event_marvanyCMBItemStateChanged
+
+    private void cheddarCMBItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cheddarCMBItemStateChanged
+        fizetendo();
+    }//GEN-LAST:event_cheddarCMBItemStateChanged
+
+    private void mozzarellaCMBItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_mozzarellaCMBItemStateChanged
+        fizetendo();
+    }//GEN-LAST:event_mozzarellaCMBItemStateChanged
+
+    private void parmesanCMBItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_parmesanCMBItemStateChanged
+        fizetendo();
+    }//GEN-LAST:event_parmesanCMBItemStateChanged
+
+    private void sonkaCMBItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_sonkaCMBItemStateChanged
+        fizetendo();
+    }//GEN-LAST:event_sonkaCMBItemStateChanged
+
+    private void szalamiCMBItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_szalamiCMBItemStateChanged
+        fizetendo();
+    }//GEN-LAST:event_szalamiCMBItemStateChanged
+
+    private void baconCMBItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_baconCMBItemStateChanged
+        fizetendo();
+    }//GEN-LAST:event_baconCMBItemStateChanged
+
+    private void gombaCMBItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_gombaCMBItemStateChanged
+        fizetendo();
+    }//GEN-LAST:event_gombaCMBItemStateChanged
+
+    private void hagymaCMBItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_hagymaCMBItemStateChanged
+        fizetendo();
+    }//GEN-LAST:event_hagymaCMBItemStateChanged
+
+    private void paprikaCMBItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_paprikaCMBItemStateChanged
+        fizetendo();
+    }//GEN-LAST:event_paprikaCMBItemStateChanged
+
+    private void kukoricaCMBItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_kukoricaCMBItemStateChanged
+        fizetendo();
+    }//GEN-LAST:event_kukoricaCMBItemStateChanged
+
+    private void pariCMBItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_pariCMBItemStateChanged
+        fizetendo();
+    }//GEN-LAST:event_pariCMBItemStateChanged
+
+    private void kicsiRBTTNItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_kicsiRBTTNItemStateChanged
+        fizetendo();
+    }//GEN-LAST:event_kicsiRBTTNItemStateChanged
+
+    private void nagyRBTTNItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_nagyRBTTNItemStateChanged
+        fizetendo();
+    }//GEN-LAST:event_nagyRBTTNItemStateChanged
 
     /**
      * @param args the command line arguments
@@ -330,32 +556,108 @@ public class PizzaGui extends javax.swing.JFrame {
             }
         });
     }
-
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JCheckBox baconCMB;
     private javax.swing.JRadioButton bbqRBTTN;
-    private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JCheckBox jCheckBox10;
-    private javax.swing.JCheckBox jCheckBox11;
-    private javax.swing.JCheckBox jCheckBox12;
-    private javax.swing.JCheckBox jCheckBox13;
-    private javax.swing.JCheckBox jCheckBox2;
-    private javax.swing.JCheckBox jCheckBox3;
-    private javax.swing.JCheckBox jCheckBox4;
-    private javax.swing.JCheckBox jCheckBox5;
-    private javax.swing.JCheckBox jCheckBox6;
-    private javax.swing.JCheckBox jCheckBox7;
-    private javax.swing.JCheckBox jCheckBox8;
-    private javax.swing.JCheckBox jCheckBox9;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JCheckBox bogyoCMB;
+    private javax.swing.JCheckBox cheddarCMB;
+    private javax.swing.JSpinner darabSPR;
+    private javax.swing.JCheckBox gombaCMB;
+    private javax.swing.JCheckBox hagymaCMB;
+    private javax.swing.JPanel husokPNL;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JSpinner jSpinner1;
+    private javax.swing.JToggleButton jToggleButton1;
+    private javax.swing.JRadioButton kicsiRBTTN;
+    private javax.swing.JCheckBox kukoricaCMB;
+    private javax.swing.JCheckBox marvanyCMB;
+    private javax.swing.ButtonGroup meretBTNG;
+    private javax.swing.JPanel meretPNL;
+    private javax.swing.JCheckBox mozzarellaCMB;
+    private javax.swing.JRadioButton nagyRBTTN;
+    private javax.swing.JLabel osszegLBL;
+    private javax.swing.JPanel osszegPNL;
+    private javax.swing.JTextField osszegTXT;
+    private javax.swing.JCheckBox paprikaCMB;
     private javax.swing.JRadioButton paradicsomRBTTN;
+    private javax.swing.JCheckBox pariCMB;
+    private javax.swing.JCheckBox parmesanCMB;
+    private javax.swing.JPanel sajtokPNL;
+    private javax.swing.JCheckBox sonkaCMB;
+    private javax.swing.JCheckBox szalamiCMB;
+    private javax.swing.ButtonGroup szoszokBTNG;
+    private javax.swing.JPanel szoszokPNL;
     private javax.swing.JRadioButton tejfolRBTTN;
+    private javax.swing.JPanel zoldsegekPNL;
     // End of variables declaration//GEN-END:variables
+
+    private void fizetendo() {
+        int osszeg = 0;
+        int ar = 0;
+        if (gombaCMB.isSelected() == true){
+              ar = 200;
+              osszeg = osszeg + ar;}
+      
+        if (kukoricaCMB.isSelected()==true){
+            ar = 200;
+            osszeg = osszeg + ar;}
+        
+        if (hagymaCMB.isSelected()==true){
+            ar = 200;
+            osszeg = osszeg + ar;}
+        
+        if (paprikaCMB.isSelected()==true){
+            ar = 200;
+            osszeg = osszeg + ar;}   
+        
+        if (bogyoCMB.isSelected()==true){
+            ar = 200;
+            osszeg = osszeg + ar;}
+        
+        if (pariCMB.isSelected()==true){
+            ar = 200;
+            osszeg = osszeg + ar;}
+        
+        if (sonkaCMB.isSelected() == true ){
+            ar = 300;
+            osszeg = osszeg + ar;}
+        if(szalamiCMB.isSelected()==true){
+           ar = 300;
+           osszeg = osszeg + ar;}
+        if(baconCMB.isSelected()==true){
+           ar = 300;
+           osszeg = osszeg + ar;}
+        
+        if (cheddarCMB.isSelected() == true  ){
+                ar = 400;
+                osszeg = osszeg + ar;}
+        if (parmesanCMB.isSelected()==true){
+            ar = 400;
+            osszeg = osszeg + ar;}
+        if (mozzarellaCMB.isSelected()==true){
+            ar = 400;
+            osszeg = osszeg + ar;}
+        if (marvanyCMB.isSelected()==true){
+            ar = 400;
+            osszeg = osszeg + ar;}
+        
+        if (kicsiRBTTN.isSelected()==true){
+            ar = 2000;
+            osszeg = osszeg + ar;
+
+        }
+        if (nagyRBTTN.isSelected()==true){
+            ar = 3000;
+            osszeg = osszeg + ar;}
+
+
+
+        else{}
+        osszegTXT.setText(String.valueOf(osszeg));
+
+    }
 }
+                    
+    
+   
+
