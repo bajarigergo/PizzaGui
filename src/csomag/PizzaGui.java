@@ -438,6 +438,10 @@ public class PizzaGui extends javax.swing.JFrame {
 
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
         
+        boolean nicsSzoszEsMeret = paradicsomRBTTN.isSelected() == false && tejfolRBTTN.isSelected() == false && bbqRBTTN.isSelected() == false && kicsiRBTTN.isSelected() == false && nagyRBTTN.isSelected() == false;
+        boolean nincsMeret = kicsiRBTTN.isSelected() == false && nagyRBTTN.isSelected() == false;
+        boolean nincsSzosz = paradicsomRBTTN.isSelected() == false && tejfolRBTTN.isSelected() == false && bbqRBTTN.isSelected() == false;
+        
         if (paradicsomRBTTN.isSelected() == false && tejfolRBTTN.isSelected() == false && bbqRBTTN.isSelected() == false) {
             JOptionPane.showMessageDialog(rootPane, "Nincs alapszósz választva", "Hiba! Alapszósz", 0);
         
