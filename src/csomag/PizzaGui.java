@@ -46,14 +46,16 @@ public class PizzaGui extends javax.swing.JFrame {
         kukoricaCMB = new javax.swing.JCheckBox();
         bogyoCMB = new javax.swing.JCheckBox();
         paprikaCMB = new javax.swing.JCheckBox();
-        osszegPNL = new javax.swing.JPanel();
-        osszegLBL = new javax.swing.JLabel();
-        osszegTXT = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
         darabSPR = new javax.swing.JSpinner();
+        jPanel2 = new javax.swing.JPanel();
         jToggleButton1 = new javax.swing.JToggleButton();
+        jButton1 = new javax.swing.JButton();
+        jPanel3 = new javax.swing.JPanel();
+        osszegTXT = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         szoszokPNL.setBorder(javax.swing.BorderFactory.createTitledBorder("Alapszósz"));
 
@@ -75,8 +77,8 @@ public class PizzaGui extends javax.swing.JFrame {
                 .addGroup(szoszokPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(bbqRBTTN, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(tejfolRBTTN, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(paradicsomRBTTN, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(51, Short.MAX_VALUE))
+                    .addComponent(paradicsomRBTTN, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(23, 23, 23))
         );
         szoszokPNLLayout.setVerticalGroup(
             szoszokPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -131,7 +133,7 @@ public class PizzaGui extends javax.swing.JFrame {
                 .addComponent(kicsiRBTTN)
                 .addGap(18, 18, 18)
                 .addComponent(nagyRBTTN)
-                .addContainerGap(13, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         sajtokPNL.setBorder(javax.swing.BorderFactory.createTitledBorder("Sajtok (400ft/ feltét)"));
@@ -286,7 +288,7 @@ public class PizzaGui extends javax.swing.JFrame {
                 .addGroup(zoldsegekPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(kukoricaCMB)
                     .addComponent(gombaCMB))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(zoldsegekPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(hagymaCMB)
                     .addComponent(pariCMB))
@@ -294,52 +296,23 @@ public class PizzaGui extends javax.swing.JFrame {
                 .addGroup(zoldsegekPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(paprikaCMB)
                     .addComponent(bogyoCMB))
-                .addContainerGap())
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         zoldsegekPNLLayout.setVerticalGroup(
             zoldsegekPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(zoldsegekPNLLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(zoldsegekPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(paprikaCMB, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(zoldsegekPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(gombaCMB)
-                        .addComponent(hagymaCMB)))
-                .addGap(18, 18, 18)
+                .addGroup(zoldsegekPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(gombaCMB)
+                    .addComponent(hagymaCMB)
+                    .addComponent(paprikaCMB))
+                .addGap(44, 44, 44)
                 .addGroup(zoldsegekPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(kukoricaCMB)
                     .addComponent(pariCMB)
                     .addComponent(bogyoCMB))
-                .addContainerGap())
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-
-        osszegPNL.setBackground(new java.awt.Color(255, 255, 255));
-        osszegPNL.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 1, true));
-        osszegPNL.setForeground(new java.awt.Color(255, 255, 255));
-
-        osszegLBL.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        osszegLBL.setText("ÖSSZEG:");
-
-        javax.swing.GroupLayout osszegPNLLayout = new javax.swing.GroupLayout(osszegPNL);
-        osszegPNL.setLayout(osszegPNLLayout);
-        osszegPNLLayout.setHorizontalGroup(
-            osszegPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(osszegPNLLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(osszegLBL)
-                .addContainerGap(33, Short.MAX_VALUE))
-        );
-        osszegPNLLayout.setVerticalGroup(
-            osszegPNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(osszegPNLLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(osszegLBL, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-
-        osszegTXT.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        osszegTXT.setText("*összeg*");
-        osszegTXT.setEnabled(false);
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Darabszám:"));
 
@@ -362,13 +335,67 @@ public class PizzaGui extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Rendelés"));
+
         jToggleButton1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        jToggleButton1.setText("Rendel");
+        jToggleButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/kepek/pizza.png"))); // NOI18N
+        jToggleButton1.setMaximumSize(new java.awt.Dimension(208, 124));
+        jToggleButton1.setMinimumSize(new java.awt.Dimension(117, 117));
+        jToggleButton1.setPreferredSize(new java.awt.Dimension(117, 117));
         jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jToggleButton1ActionPerformed(evt);
             }
         });
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jToggleButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jToggleButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        jButton1.setBackground(new java.awt.Color(255, 96, 96));
+        jButton1.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        jButton1.setText("Törlés");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Összeg:", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 12))); // NOI18N
+
+        osszegTXT.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        osszegTXT.setText("*összeg*");
+        osszegTXT.setEnabled(false);
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(osszegTXT)
+                .addContainerGap())
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(osszegTXT, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -378,28 +405,34 @@ public class PizzaGui extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(szoszokPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(sajtokPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(zoldsegekPNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(sajtokPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(szoszokPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(meretPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(husokPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addComponent(zoldsegekPNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jToggleButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(osszegPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(osszegTXT)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
+                            .addComponent(husokPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(6, 6, 6))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addContainerGap())))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(meretPNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(szoszokPNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
@@ -407,19 +440,22 @@ public class PizzaGui extends javax.swing.JFrame {
                             .addComponent(sajtokPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(husokPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addComponent(osszegPNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(88, 88, 88)
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(osszegTXT, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(meretPNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(zoldsegekPNL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jToggleButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(13, 13, 13)))
-                .addGap(18, 18, 18))
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(19, 19, 19)
+                        .addComponent(zoldsegekPNL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addContainerGap())
         );
 
         pack();
@@ -430,26 +466,22 @@ public class PizzaGui extends javax.swing.JFrame {
     }//GEN-LAST:event_kicsiRBTTNActionPerformed
 
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
-        
-        boolean nicsSzoszEsMeret = paradicsomRBTTN.isSelected() == false && tejfolRBTTN.isSelected() == false && bbqRBTTN.isSelected() == false && kicsiRBTTN.isSelected() == false && nagyRBTTN.isSelected() == false;
+       
         boolean nincsMeret = kicsiRBTTN.isSelected() == false && nagyRBTTN.isSelected() == false;
         boolean nincsSzosz = paradicsomRBTTN.isSelected() == false && tejfolRBTTN.isSelected() == false && bbqRBTTN.isSelected() == false;
         
-        if (paradicsomRBTTN.isSelected() == false && tejfolRBTTN.isSelected() == false && bbqRBTTN.isSelected() == false) {
-            JOptionPane.showMessageDialog(rootPane, "Nincs alapszósz választva", "Hiba! Alapszósz", 0);
+        if (nincsSzosz && nincsMeret) {
+            JOptionPane.showMessageDialog(rootPane, "Nincs alapszósz és méret választva", "Hiba! Alapszósz/Méret", 0);
         
         
    
         }
-        else
-        {
-                
-        
-                
-        }
+        else if (nincsSzosz ){
+            JOptionPane.showMessageDialog(rootPane, "Nincs szósz választva", "Hiba! szósz", 2);
+                }
         
         
-        if (kicsiRBTTN.isSelected() == false && nagyRBTTN.isSelected() == false) {
+        else if (nincsMeret) {
             JOptionPane.showMessageDialog(rootPane, "Nincs méret választva", "Hiba! méret", 2);
         
         
@@ -457,7 +489,7 @@ public class PizzaGui extends javax.swing.JFrame {
         }
         else
         {
-                
+            JOptionPane.showMessageDialog(null, "Sikeres rendelés");
         
                 
         }
@@ -521,6 +553,26 @@ public class PizzaGui extends javax.swing.JFrame {
         fizetendo();
     }//GEN-LAST:event_nagyRBTTNItemStateChanged
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+
+        meretBTNG.clearSelection();
+        szoszokBTNG.clearSelection();
+        marvanyCMB.setSelected(false);
+        cheddarCMB.setSelected(false);
+        mozzarellaCMB.setSelected(false);
+        parmesanCMB.setSelected(false);
+        sonkaCMB.setSelected(false);
+        baconCMB.setSelected(false);
+        szalamiCMB.setSelected(false);
+        gombaCMB.setSelected(false);
+        hagymaCMB.setSelected(false);
+        kukoricaCMB.setSelected(false);
+        bogyoCMB.setSelected(false);
+        pariCMB.setSelected(false);
+        paprikaCMB.setSelected(false);
+                
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -565,7 +617,10 @@ public class PizzaGui extends javax.swing.JFrame {
     private javax.swing.JCheckBox gombaCMB;
     private javax.swing.JCheckBox hagymaCMB;
     private javax.swing.JPanel husokPNL;
+    private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JRadioButton kicsiRBTTN;
     private javax.swing.JCheckBox kukoricaCMB;
@@ -574,8 +629,6 @@ public class PizzaGui extends javax.swing.JFrame {
     private javax.swing.JPanel meretPNL;
     private javax.swing.JCheckBox mozzarellaCMB;
     private javax.swing.JRadioButton nagyRBTTN;
-    private javax.swing.JLabel osszegLBL;
-    private javax.swing.JPanel osszegPNL;
     private javax.swing.JTextField osszegTXT;
     private javax.swing.JCheckBox paprikaCMB;
     private javax.swing.JRadioButton paradicsomRBTTN;
@@ -591,69 +644,85 @@ public class PizzaGui extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     private void fizetendo() {
+        int a = Integer.parseInt( darabSPR.getValue().toString());
         int osszeg = 0;
         int ar = 0;
         if (gombaCMB.isSelected() == true){
               ar = 200;
-              osszeg = osszeg + ar;}
+              osszeg = (osszeg + ar);}
       
         if (kukoricaCMB.isSelected()==true){
             ar = 200;
-            osszeg = osszeg + ar;}
+            osszeg = (osszeg + ar);}
         
         if (hagymaCMB.isSelected()==true){
             ar = 200;
-            osszeg = osszeg + ar;}
+            osszeg = (osszeg + ar);}
         
         if (paprikaCMB.isSelected()==true){
             ar = 200;
-            osszeg = osszeg + ar;}   
+            osszeg = (osszeg + ar);}   
         
         if (bogyoCMB.isSelected()==true){
             ar = 200;
-            osszeg = osszeg + ar;}
+            osszeg = (osszeg + ar);}
         
         if (pariCMB.isSelected()==true){
             ar = 200;
-            osszeg = osszeg + ar;}
+            osszeg = (osszeg + ar);}
         
         if (sonkaCMB.isSelected() == true ){
             ar = 300;
-            osszeg = osszeg + ar;}
+            osszeg = (osszeg + ar);}
         if(szalamiCMB.isSelected()==true){
            ar = 300;
-           osszeg = osszeg + ar;}
+           osszeg = (osszeg + ar);}
         if(baconCMB.isSelected()==true){
            ar = 300;
-           osszeg = osszeg + ar;}
+           osszeg = (osszeg + ar);}
         
         if (cheddarCMB.isSelected() == true  ){
                 ar = 400;
-                osszeg = osszeg + ar;}
+                osszeg = (osszeg + ar);}
         if (parmesanCMB.isSelected()==true){
             ar = 400;
-            osszeg = osszeg + ar;}
+            osszeg = (osszeg + ar);}
         if (mozzarellaCMB.isSelected()==true){
             ar = 400;
-            osszeg = osszeg + ar;}
+            osszeg = (osszeg + ar);}
         if (marvanyCMB.isSelected()==true){
             ar = 400;
-            osszeg = osszeg + ar;}
+            osszeg = (osszeg + ar);}
         
         if (kicsiRBTTN.isSelected()==true){
             ar = 2000;
-            osszeg = osszeg + ar;
+            osszeg = (osszeg + ar);
 
         }
         if (nagyRBTTN.isSelected()==true){
             ar = 3000;
-            osszeg = osszeg + ar;}
+            osszeg = (osszeg + ar);
+            
+        }
+        if (a == 1){
+        osszeg = osszeg * a;
+        }
+        
+        if (a == 2){
+        osszeg = osszeg * a;
+        }
+        
+        if (a == 3){
+        osszeg = osszeg * a;
+        }
+        
 
 
 
         else{}
-        osszegTXT.setText(String.valueOf(osszeg));
 
+        osszegTXT.setText(String.valueOf(osszeg));
+        
     }
 }
                     
